@@ -1,0 +1,27 @@
+{
+  "updatedAt": "2026-10-12T11:00:00-03:00",
+  "restaurant": { "name": "Restaurante Voltareli", "rating": 4.6, "hours": "Seg–Sáb 11:00–14:00" },
+  "categories": [
+    { "id": "principais", "label": "Pratos Principais" },
+    { "id": "especiais", "label": "Especiais do Dia" },
+    { "id": "bebidas", "label": "Bebidas" },
+    { "id": "sobremesas", "label": "Sobremesas" }
+  ],
+  "items": [
+    { "id": "pf-frango", "name": "Frango Grelhado da Casa", "description": "Arroz branco soltinho, feijão carioca, frango grelhado, farofa, vinagrete e salada fresca.", "priceCents": 2490, "category": "principais", "tags": ["mais pedido"], "available": true, "serves": "Serve 1 pessoa" },
+    { "id": "pf-bife", "name": "Bife Acebolado com Fritas", "description": "Arroz, feijão, bife macio acebolado, batata frita crocante e salada do dia.", "priceCents": 2890, "category": "principais", "tags": ["clássico"], "available": true, "serves": "Serve 1 pessoa" },
+    { "id": "pf-marmitex", "name": "Marmitex Executiva", "description": "A mesma comida do balcão, para viagem. Proteína do dia + 4 acompanhamentos.", "priceCents": 2290, "category": "principais", "tags": ["viagem"], "available": true, "serves": "Serve 1 pessoa" },
+    { "id": "por-frango", "name": "Frango a Passarinho", "description": "Temperado da casa, alho frito e limão.", "priceCents": 3990, "category": "principais", "tags": ["porção", "dividir"], "available": true, "serves": "Serve 2–3 pessoas" },
+    { "id": "por-fritas", "name": "Fritas com Cheddar e Bacon", "description": "Batata crocante, cheddar cremoso, bacon e cebolinha.", "priceCents": 3490, "category": "principais", "tags": ["porção"], "available": true, "serves": "Serve 2–3 pessoas" },
+    { "id": "esp-virado", "name": "Virado à Paulista · Segunda", "description": "Virado de feijão, bisteca suína, couve, ovo frito, banana-da-terra e torresmo.", "priceCents": 2990, "category": "especiais", "tags": ["seg", "tradição"], "available": true, "weekdaySpecial": [1], "serves": "Serve 1 pessoa" },
+    { "id": "esp-feijoada", "name": "Feijoada Completa · Qua & Sáb", "description": "Feijoada encorpada, couve, torresmo, laranja, arroz e farofa de mandioca.", "priceCents": 3290, "category": "especiais", "tags": ["qua", "sáb"], "available": true, "weekdaySpecial": [3, 6], "serves": "Serve 1–2 pessoas" },
+    { "id": "esp-tilapia", "name": "Tilápia Frita com Mandioca", "description": "Filé empanado dourado, mandioca frita, vinagrete e molho tártaro.", "priceCents": 5490, "category": "especiais", "tags": ["peixe"], "available": false, "serves": "Serve 2–3 pessoas" },
+    { "id": "beb-suco", "name": "Suco Natural · 500 ml", "description": "Laranja, maracujá, limonada ou abacaxi com hortelã.", "priceCents": 900, "category": "bebidas", "tags": ["natural"], "available": true },
+    { "id": "beb-refri", "name": "Refrigerante Lata", "description": "Coca-Cola, Guaraná Antarctica ou Sprite.", "priceCents": 650, "category": "bebidas", "tags": ["gelado"], "available": true },
+    { "id": "beb-cerveja", "name": "Cerveja Long Neck", "description": "Heineken, Stella ou Corona.", "priceCents": 1200, "category": "bebidas", "tags": ["gelada"], "available": true },
+    { "id": "beb-agua", "name": "Água Mineral · 500 ml", "description": "Com ou sem gás.", "priceCents": 400, "category": "bebidas", "tags": [], "available": true },
+    { "id": "sob-pudim", "name": "Pudim de Leite Condensado", "description": "Receita da casa com calda de caramelo.", "priceCents": 1200, "category": "sobremesas", "tags": ["receita da casa"], "available": true },
+    { "id": "sob-mousse", "name": "Mousse de Maracujá", "description": "Cremosa, com calda de maracujá natural.", "priceCents": 1000, "category": "sobremesas", "tags": [], "available": true },
+    { "id": "sob-cocada", "name": "Cocada Cremosa de Colher", "description": "Feita diariamente com coco fresco.", "priceCents": 900, "category": "sobremesas", "tags": [], "available": false }
+  ]
+}

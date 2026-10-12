@@ -1,0 +1,15 @@
+{
+  "name": "voltareli-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "Menu API — Restaurante Voltareli (GET /api/v1/menu)",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

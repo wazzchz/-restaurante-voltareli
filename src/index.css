@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-accent: #c2410c;
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-canvas-porcelain font-sans text-ink antialiased dark:bg-canvas-obsidian dark:text-zinc-100;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #c2410c;
+  color: #fff;
+}
+
+/* Accessible focus ring in brand accent */
+:focus-visible {
+  outline: 3px solid #d97706;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Floating pill header glass */
+.glass-pill {
+  background: rgba(250, 250, 250, 0.72);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+}
+.dark .glass-pill {
+  background: rgba(9, 9, 11, 0.68);
+  backdrop-filter: blur(20px) saturate(1.3);
+  -webkit-backdrop-filter: blur(20px) saturate(1.3);
+}
+
+/* Warm ambient glow matching logo amber */
+.amber-glow {
+  background-image: radial-gradient(
+      ellipse 55% 45% at 75% 0%,
+      rgba(217, 119, 6, 0.14),
+      transparent
+    ),
+    radial-gradient(ellipse 45% 40% at 10% 100%, rgba(194, 65, 12, 0.1), transparent);
+}
+.dark .amber-glow {
+  background-image: radial-gradient(
+      ellipse 60% 45% at 70% 0%,
+      rgba(217, 119, 6, 0.22),
+      transparent
+    ),
+    radial-gradient(ellipse 45% 40% at 10% 100%, rgba(194, 65, 12, 0.16), transparent);
+}
+
+/* Display headline */
+.display-clamp {
+  font-size: clamp(2.6rem, 6.4vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+/* Haptic-like pressable */
+.pressable {
+  transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease,
+    background-color 0.2s ease, border-color 0.2s ease;
+}
+.pressable:hover {
+  transform: translateY(-1px);
+}
+.pressable:active {
+  transform: scale(0.96);
+}
+
+/* Hide scrollbars on tab rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
