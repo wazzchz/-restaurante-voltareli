@@ -28,12 +28,7 @@ function fallback(reason: string): MenuResponse {
   return {
     updatedAt: FALLBACK_UPDATED_AT,
     restaurant: { name: 'Restaurante Voltareli', rating: 4.6, hours: 'Seg–Sáb 11:00–14:00' },
-    categories: [
-      { id: 'pratos', label: 'Pratos Feitos' },
-      { id: 'porcoes', label: 'Porções' },
-      { id: 'bebidas', label: 'Bebidas' },
-      { id: 'sobremesas', label: 'Sobremesas' },
-    ],
+    categories: CATEGORIES,
     items: FALLBACK_MENU,
   };
 }
